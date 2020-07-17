@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/perfectmeeting/static/css/main.5f361e03.chunk.css",
+    "main.js": "/perfectmeeting/static/js/main.fe8fc028.chunk.js",
+    "main.js.map": "/perfectmeeting/static/js/main.fe8fc028.chunk.js.map",
+    "runtime-main.js": "/perfectmeeting/static/js/runtime-main.86ec8e29.js",
+    "runtime-main.js.map": "/perfectmeeting/static/js/runtime-main.86ec8e29.js.map",
+    "static/js/2.0b4cff1e.chunk.js": "/perfectmeeting/static/js/2.0b4cff1e.chunk.js",
+    "static/js/2.0b4cff1e.chunk.js.map": "/perfectmeeting/static/js/2.0b4cff1e.chunk.js.map",
+    "index.html": "/perfectmeeting/index.html",
+    "precache-manifest.c16f087628da39249fde5cd052095cee.js": "/perfectmeeting/precache-manifest.c16f087628da39249fde5cd052095cee.js",
+    "service-worker.js": "/perfectmeeting/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/perfectmeeting/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.0b4cff1e.chunk.js.LICENSE.txt": "/perfectmeeting/static/js/2.0b4cff1e.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/perfectmeeting/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.86ec8e29.js",
+    "static/js/2.0b4cff1e.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.fe8fc028.chunk.js"
+  ]
+}
