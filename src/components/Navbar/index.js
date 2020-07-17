@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Logo from '../../assets/img/updated BAE.png';
 import './style.css';
 
 function Navbar() {

@@ -7,6 +7,9 @@ function Landing() {
   return (
     <div>
       <Navbar />
+      <p>
+      This is a test
+        </p>
     </div>
   );
 }
