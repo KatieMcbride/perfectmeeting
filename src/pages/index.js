@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import './style.css';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar/index';
 
 
 function Landing() {
   return (
     <div>
       <Navbar />
-      <p>
-      This is a test
-        </p>
+      <div className="background">
+          test
+      </div>
     </div>
   );
 }

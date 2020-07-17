@@ -3,9 +3,8 @@ import './style.css';
 
 function Navbar() {
   return (
-    <nav>
-        This is the NavBar
-
+    <nav className= "navBar">
+        <button className="button">Get Started</button>
     </nav>
   );
 }
