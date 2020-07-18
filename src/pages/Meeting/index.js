@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CreateMeeting() {
+export default function Meeting() {
     const classes = useStyles();
 
   return (
@@ -39,17 +39,12 @@ export default function CreateMeeting() {
         <div className={classes.heroContent}>
           <Container maxWidth="lg">
             <Typography component="h1" variant="h1" align="center" color="textPrimary" gutterBottom>
-              Create Meeting Page
+              Meeting Page
             </Typography>
-            <Grid container spacing={1} justify="center">
-                <form className={classes.root} noValidate autoComplete="off">
-                    <TextField id="outlined-basic" label="Meeting Name" variant="outlined" />
-                </form>
-            </Grid>
             <div className={classes.heroButtons}>
               <Grid container spacing={1} justify="center">
-                  <Button variant="contained" color="primary" size="large" href="/meeting">
-                    Start Meeting
+                  <Button variant="contained" color="primary" size="large" href="">
+                    End Meeting
                   </Button>
               </Grid>
             </div>
