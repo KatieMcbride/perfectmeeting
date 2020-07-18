@@ -1,28 +1,20 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Grid from '@material-ui/core/Grid';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import TextField from '@material-ui/core/TextField';
 import AppBar from '../../components/app_bar';
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Perfect Meeting
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+import Grid from '@material-ui/core/Grid';
+import Container from '@material-ui/core/Container';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+      width: '25ch',
+    },
+  },
   icon: {
     marginRight: theme.spacing(2),
   },
@@ -33,51 +25,38 @@ const useStyles = makeStyles((theme) => ({
   heroButtons: {
     marginTop: theme.spacing(4),
   },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
-  },
 }));
 
-
-export default function Album() {
-  const classes = useStyles();
+export default function CreateMeeting() {
+    const classes = useStyles();
 
   return (
     <React.Fragment>
-      <CssBaseline />
-   <AppBar />
-      <main>
+        <CssBaseline />
+    <AppBar />
+    <main>
         {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="lg">
             <Typography component="h1" variant="h1" align="center" color="textPrimary" gutterBottom>
-              Perfect Meeting
+              Let's get started
             </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              We are building data-driven, inclusive meetings. 
-            </Typography>
+            <Grid container spacing={1} justify="center">
+                <form className={classes.root} noValidate autoComplete="off">
+                    <TextField id="outlined-basic" label="Meeting Name" variant="outlined" />
+                </form>
+            </Grid>
             <div className={classes.heroButtons}>
               <Grid container spacing={1} justify="center">
-                  <Button variant="contained" color="secondary" size="large" href="/createmeeting">
-                   DASHBOARD
+                  <Button variant="contained" color="primary" size="large" href="">
+                    Start Meeting
                   </Button>
               </Grid>
             </div>
           </Container>
         </div>
       </main>
-      {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Perfect Meeting
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Login in to a better workplace.
-        </Typography>
-        <Copyright />
-      </footer>
-      {/* End footer */}
     </React.Fragment>
+
   );
 }
