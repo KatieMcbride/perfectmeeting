@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Landing from './pages/Landing/index';
 import CreateMeeting from './pages/CreateMeeting';
 import Meeting from './pages/Meeting';
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           </Route>
           <Route exact path="/meeting">
             <Meeting />
+          </Route>
+          <Route exact path="/profile">
+            <Profile />
           </Route>
         </Switch>
       </div>

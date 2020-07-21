@@ -1,5 +1,4 @@
 import React from 'react';
-import TextField from '@material-ui/core/TextField';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -78,15 +77,12 @@ export default function Landing() {
         <div className={classes.heroContent}>
           <Container maxWidth="lg">
             <Typography component="h1" variant="h1" align="center" color="textPrimary" gutterBottom>
-              Perfect Meeting
-            </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              We are building data-driven, inclusive meetings. 
+            Profile Page
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={1} justify="center">
-                  <Button variant="contained" color="secondary" size="large" href="/profile">
-                    Get Started
+                  <Button variant="contained" color="secondary" size="large" href="/createmeeting">
+                    Start Meeting
                   </Button>
               </Grid>
             </div>
@@ -94,78 +90,6 @@ export default function Landing() {
 
           <Container component="main" maxWidth="xs">
       <CssBaseline />
-      <div className={classes.paper}>
-        <Typography component="h1" variant="h5">
-          Sign up
-        </Typography>
-        <form className={classes.form} noValidate>
-          <Grid container spacing={2}>
-            <Grid item xs={12} sm={6}>
-              <TextField
-                autoComplete="fname"
-                name="firstName"
-                variant="outlined"
-                required
-                fullWidth
-                id="firstName"
-                label="First Name"
-                autoFocus
-              />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <TextField
-                variant="outlined"
-                required
-                fullWidth
-                id="lastName"
-                label="Last Name"
-                name="lastName"
-                autoComplete="lname"
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <TextField
-                variant="outlined"
-                required
-                fullWidth
-                id="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <TextField
-                variant="outlined"
-                required
-                fullWidth
-                name="password"
-                label="Password"
-                type="password"
-                id="password"
-                autoComplete="current-password"
-              />
-            </Grid>
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-            className={classes.submit}
-          >
-            Sign Up
-          </Button>
-          <Grid container justify="flex-end">
-            <Grid item>
-              <Link href="#" variant="body2">
-                Already have an account? Sign in
-              </Link>
-            </Grid>
-          </Grid>
-          </ Grid>
-        </form>
-        
-      </div>
       <Box mt={5}>
         <Copyright />
       </Box>
