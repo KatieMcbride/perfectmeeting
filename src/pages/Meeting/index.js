@@ -43,7 +43,7 @@ export default function Meeting() {
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={1} justify="center">
-                  <Button variant="contained" color="primary" size="large" href="">
+                  <Button variant="contained" color="primary" size="large" href="/profile">
                     End Meeting
                   </Button>
               </Grid>

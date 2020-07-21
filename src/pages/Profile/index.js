@@ -82,7 +82,7 @@ export default function Landing() {
             <div className={classes.heroButtons}>
               <Grid container spacing={1} justify="center">
                   <Button variant="contained" color="secondary" size="large" href="/createmeeting">
-                    Start Meeting
+                    Create Meeting
                   </Button>
               </Grid>
             </div>
