@@ -28,13 +28,13 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function CreateMeeting() {
-    const classes = useStyles();
+  const classes = useStyles();
 
   return (
     <React.Fragment>
-        <CssBaseline />
-    <AppBar />
-    <main>
+      <CssBaseline />
+      <AppBar />
+      <main>
         {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="lg">
@@ -42,16 +42,17 @@ export default function CreateMeeting() {
               Create Meeting Page
             </Typography>
             <Grid container spacing={1} justify="center">
-                <form className={classes.root} noValidate autoComplete="off">
-                    <TextField id="outlined-basic" label="Meeting Name" variant="outlined" />
-                </form>
-            </Grid>
-            <div className={classes.heroButtons}>
-              <Grid container spacing={1} justify="center">
-                  <Button variant="contained" color="primary" size="large" href="/meeting">
+              <form className={classes.root} action="localhost:8084/" method="post" noValidate autoComplete="off">
+                <TextField id="outlined-basic" label="Meeting Name" variant="outlined" />
+                <Grid container spacing={1} justify="center">
+                  <Button variant="contained" color="primary" size="large" type="submit">
                     Start Meeting
                   </Button>
-              </Grid>
+                </Grid>
+              </form>
+            </Grid>
+            <div className={classes.heroButtons}>
+
             </div>
           </Container>
         </div>

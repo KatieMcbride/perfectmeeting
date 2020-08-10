@@ -1,12 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import TextField from '@material-ui/core/TextField';
 import AppBar from '../../components/app_bar';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import WSMic from '../../components/Audio/WSMic';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,13 +28,13 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Meeting() {
-    const classes = useStyles();
+  const classes = useStyles();
 
   return (
     <React.Fragment>
-        <CssBaseline />
-    <AppBar />
-    <main>
+      <CssBaseline />
+      <AppBar />
+      <main>
         {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="lg">
@@ -43,9 +43,10 @@ export default function Meeting() {
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={1} justify="center">
-                  <Button variant="contained" color="primary" size="large" href="/profile">
-                    End Meeting
-                  </Button>
+                <WSMic
+                  className="sound-wave"
+                  strokeColor="#000000"
+                  backgroundColor="#FF4081" />
               </Grid>
             </div>
           </Container>

@@ -4,6 +4,7 @@ import Landing from './pages/Landing/index';
 import CreateMeeting from './pages/CreateMeeting';
 import Meeting from './pages/Meeting';
 import Profile from './pages/Profile';
+import Upload from './pages/Upload';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route exact path="/profile">
             <Profile />
+          </Route>
+          <Route exact path="/upload">
+            <Upload />
           </Route>
         </Switch>
       </div>
